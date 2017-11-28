@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ItemsComponent implements OnInit {
 
-
   items: IItem[] = [
     {
       'id': 1,
