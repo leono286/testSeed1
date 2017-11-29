@@ -6,6 +6,7 @@ import { HighlightDirective } from './directives/highlight.directive';
 import { ItemsComponent } from './components/items/items.component';
 import { ItemComponent } from './components/items/item/item.component';
 import { DomainOnlyPipe } from './pipes/domain-only.pipe';
+import { ImageComponent } from './components/image/image.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { DomainOnlyPipe } from './pipes/domain-only.pipe';
     HighlightDirective,
     ItemsComponent,
     ItemComponent,
-    DomainOnlyPipe
+    DomainOnlyPipe,
+    ImageComponent
   ],
   imports: [
     BrowserModule

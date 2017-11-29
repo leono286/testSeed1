@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { IItem } from './item.interface';
 
 @Component({
@@ -10,9 +10,18 @@ export class ItemComponent implements OnInit {
 
   @Input() item: IItem;
 
+  url = 'http://api.adorable.io/avatar/200/leo';
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  changeImage() {
+    this.url = 'http://api.adorable.io/avatar/200/car';
+  }
+  revertImage() {
+    this.url = 'http://api.adorable.io/avatar/200/leo';
   }
 
 }
